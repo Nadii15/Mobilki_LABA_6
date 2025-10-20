@@ -109,5 +109,7 @@ class Hero(
         }
         return canAccept
     }
-
+    fun canCast(spell: Spell): Boolean {
+        return (spell.name.length <= level * 2) && (spell.width <= 5 && spell.height <= 5)
+    }
 }
