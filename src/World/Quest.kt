@@ -1,4 +1,4 @@
-package Class
+package World
 
 class Quest(
     val title: String,

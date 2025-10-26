@@ -1,4 +1,4 @@
-package Class
+package World
 
 fun main() {
     val quest = Quest("Побег из замка", 5, 700, "Сложный")

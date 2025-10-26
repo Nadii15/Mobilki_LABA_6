@@ -1,5 +1,5 @@
 package characters
-import Class.Quest
+import World.Quest
 import  magic.Spell
 class Hero(
     val name: String,
