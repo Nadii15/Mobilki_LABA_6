@@ -1,19 +1,15 @@
 package magic
 
-fun main() {
-    val fireWall = Spell(
-        name = "Огненная Стена",
-        width = 5,
-        height = 3,
-        symbol = "\uD83D\uDD25"
-    )
-    fireWall.cast()
+fun main(){
+    val fireball = Spell("Огненный шар",3,3,"\uD83D\uDD25")
+    val heal = InstantSpell("Лечение","\uD83D\uDC9A",5)
 
-    val iceShield = Spell(
-        name = "Ледяной Щит",
-        width = 4,
-        height = 4,
-        symbol = "\u2744\uFE0F"
-    )
-    iceShield.cast()
+    println("Заклинание: ${fireball.name}")
+    println("Символ: ${fireball.symbol}")
+    println("Длится: ${fireball.duration} сек")
+
+    println("\nМгновенное заклинание: ${heal.name}")
+    println("Символ: ${heal.symbol}")
+    println("Сила: ${heal.power}")
+    println("длится: ${heal.duration} сек")
 }
